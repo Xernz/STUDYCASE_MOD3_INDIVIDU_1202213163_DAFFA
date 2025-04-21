@@ -58,7 +58,7 @@
                         @enderror
                     </div>
                     <div style="display: flex; justify-content: flex-end;">
-                        <button type="submit" class="btn-submit-note" style="">Update</button>
+                        <button type="submit" class="btn-submit-note" dusk="update-note-button" style="">Update</button>
                     </div>
             </form>
         </div>

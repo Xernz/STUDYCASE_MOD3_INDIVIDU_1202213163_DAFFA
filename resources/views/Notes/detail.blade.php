@@ -20,13 +20,13 @@
                     <div style="display: flex; align-items: center; gap: 4px; ">
                         {{-- <i class="material-icons" style="color: rgb(255 203 0 1);">mode_edit</i> --}}
                         {{-- <i class="material-icons" style="color: rgb(242, 41, 41);">delete_forever</i> --}}
-                        <a type="submit" href="/edit-note-page/{{$note_data->id}}" id="{{$note_data->id}}" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(255 203 0); padding: 6px; color:white; font-size: 12px; font-weight:600;">
+                        <a type="submit" href="/edit-note-page/{{$note_data->id}}" id="{{$note_data->id}}" dusk="edit-note-link" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(255 203 0); padding: 6px; color:white; font-size: 12px; font-weight:600;">
                             Edit
                         </a>
                         <form class="" action="/delete-note/{{ $note_data->id }}" method="POST" style="margin: 0">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" id="delete-{{$note_data->id}}" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(242, 41, 41); padding: 6px; color:white; font-size: 12px; font-weight:600;">
+                            <button type="submit" id="delete-{{$note_data->id}}" dusk="delete-note-button" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(242, 41, 41); padding: 6px; color:white; font-size: 12px; font-weight:600;">
                                 Delete
                             </button>
                         </form>
